@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".fragment.DonateFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_above="@id/btnDonateNext"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginTop="28.2dp"
+            android:layout_marginRight="16.7dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/txt_name"
+                android:textColor="@color/hint_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtDonateName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rectangle_gray_border"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:inputType="text"
+                android:paddingLeft="16.7dp"
+                android:imeOptions="actionNext"
+                android:paddingTop="12dp"
+                android:paddingBottom="11.7dp"
+                android:text="@string/shaikh_sami"
+                android:textColor="@color/txt_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/txt_mobileno"
+                android:textColor="@color/hint_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtDonateMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rectangle_gray_border"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:inputType="number"
+                android:maxLength="10"
+                android:imeOptions="actionNext"
+                android:paddingLeft="16.7dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="11.7dp"
+                android:text="@string/_9845124578"
+                android:textColor="@color/txt_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/txt_address"
+                android:textColor="@color/hint_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtDonateAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rectangle_gray_border"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:inputType="textMultiLine"
+                android:paddingLeft="16.7dp"
+                android:imeOptions="actionNext"
+                android:paddingTop="12dp"
+                android:paddingBottom="11.7dp"
+                android:text="@string/downtown_dubai"
+                android:textColor="@color/txt_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/txt_email"
+                android:textColor="@color/hint_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtDonateEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rectangle_gray_border"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="16.7dp"
+                android:imeOptions="actionNext"
+                android:paddingTop="12dp"
+                android:paddingBottom="11.7dp"
+                android:text="@string/sami_gmail_com"
+                android:textColor="@color/txt_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/txt_nationality"
+                android:textColor="@color/hint_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtDonateNationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rectangle_gray_border"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:inputType="text"
+                android:paddingLeft="16.7dp"
+                android:imeOptions="actionNext"
+                android:paddingTop="12dp"
+                android:paddingBottom="11.7dp"
+                android:text="@string/emirati"
+                android:textColor="@color/txt_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/emirate_id"
+                android:textColor="@color/hint_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtDonateNationalityId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rectangle_gray_border"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:inputType="text"
+                android:paddingLeft="16.7dp"
+                android:paddingTop="12dp"
+                android:imeOptions="actionNext"
+                android:paddingBottom="11.7dp"
+                android:text="@string/_758969848"
+                android:textColor="@color/txt_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/txt_amount"
+                android:textColor="@color/hint_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtDonateAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rectangle_gray_border"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:paddingLeft="16.7dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="11.7dp"
+                android:text="@string/_5000_aed"
+                android:textColor="@color/txt_black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <Button
+        android:id="@+id/btnDonateNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.7dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16.7dp"
+        android:background="@drawable/rectangle_red"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</RelativeLayout>

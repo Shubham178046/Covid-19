@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".fragment.TestFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="23.7dp"
+        android:layout_marginRight="32dp"
+        android:fontFamily="@font/sf_pro_display_medium"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/description_test"
+        android:textColor="@color/txt_black"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_agree"
+        android:layout_marginLeft="48.7dp"
+        android:layout_marginRight="48.7dp"
+        android:layout_marginBottom="21.3dp"
+        android:textAllCaps="false"
+        android:background="@drawable/rectangle_gray_cure_border"
+        android:fontFamily="@font/sf_pro_display_medium"
+        android:text="@string/i_dont_agree"
+        android:textColor="@color/title_black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="48.7dp"
+        android:layout_marginRight="48.7dp"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/rectangle_green_cure_border"
+        android:fontFamily="@font/sf_pro_display_medium"
+        android:text="@string/i_agree"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink_light"
+    android:orientation="vertical"
+    tools:context=".ui.WalkthroughActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="62.8dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/li_line1"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_margin="3.6dp"
+            android:layout_weight="1"
+            android:background="@drawable/lightgray_line"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/li_line2"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_margin="3.6dp"
+            android:layout_weight="1"
+            android:background="@drawable/lightgray_line"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/li_line3"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_margin="3.6dp"
+            android:layout_weight="1"
+            android:background="@drawable/lightgray_line"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rectangle_light_green"
+        android:backgroundTint="@color/red"
+        android:text="@string/next"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16.7sp" />
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/red"
+    tools:context=".ui.SocialLoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="-120dp"
+        android:layout_height="300dp"
+        android:src="@drawable/top_covid"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/covid19_img"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12.7dp"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:text="@string/stay_updated_amp_stay_safe"
+        android:textColor="@color/light_white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25.8dp"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:text="@string/signin_with"
+        android:textColor="@color/light_white"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="28.5dp">
+
+        <TextView
+            android:id="@+id/txtFacebook"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_facebook_icon"
+            android:textColor="@color/txt_black"
+            android:text="@string/facebook"
+            android:textSize="14sp"
+            android:drawablePadding="13.8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="11dp"
+            android:paddingTop="12.3dp"
+            android:layout_marginRight="4.3dp"
+            android:background="@drawable/rectangle_white_cure"/>
+        <TextView
+            android:id="@+id/txtGoogle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_google_icon"
+            android:textColor="@color/txt_black"
+            android:text="@string/google"
+            android:textSize="14sp"
+            android:drawablePadding="13.8dp"
+            android:paddingLeft="38dp"
+            android:paddingBottom="11dp"
+            android:paddingTop="12.3dp"
+            android:layout_marginLeft="4.3dp"
+            android:background="@drawable/rectangle_white_cure"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:text="@string/don_t_worry_we_will"
+        android:textColor="@color/light_white"
+        android:layout_marginTop="18.6dp"
+        android:lineSpacingExtra="2dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:id="@+id/llContinueGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50.4dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:text="@string/continue_as_a_guest"
+            android:textAlignment="center"
+            android:textColor="@color/light_white"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/title_color"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</LinearLayout>

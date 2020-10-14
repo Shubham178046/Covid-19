@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="29.3dp"
+    android:layout_marginBottom="30dp"
+    android:id="@+id/sanitizer_cardView"
+    app:cardCornerRadius="16.7dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingBottom="12.3dp">
+
+        <ImageView
+            android:layout_width="44.8dp"
+            android:layout_height="52.6dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25.1dp"
+            android:src="@drawable/ic_hand_sanitizer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11.7dp"
+            android:layout_marginTop="23.7dp"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:text="@string/_10_aed"
+            android:textColor="@color/red"
+            android:textSize="16.7sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.3dp"
+            android:layout_marginTop="12.3dp"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:text="@string/dettol_hand_instant_sanitizer"
+            android:textColor="@color/txt_black"
+            android:textSize="12.7sp" />
+
+        <TextView
+            android:id="@+id/txt_ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.3dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="50 ml"
+            android:textColor="@color/hint_color"
+            android:textSize="12.3sp" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

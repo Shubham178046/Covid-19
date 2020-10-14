@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    android:orientation="vertical"
+    tools:context=".ui.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="-120dp"
+        android:src="@drawable/top_covid" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/covid19_img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12.7dp"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:text="@string/stay_updated_amp_stay_safe"
+        android:textColor="@color/light_white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25.8dp"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:text="@string/login_with"
+        android:textColor="@color/light_white"
+        android:textSize="15sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.7dp"
+        android:layout_marginTop="38.7dp"
+        android:layout_marginRight="16.7dp"
+        android:textColorHint="@color/white_opecity"
+        app:hintTextAppearance="@style/BlueTextInputLayout">
+
+        <EditText
+            android:id="@+id/edtMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:hint="@string/mobile_number"
+            android:inputType="number"
+            android:paddingTop="8dp"
+            android:paddingBottom="5.7dp"
+            android:text="+917041782848"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.9dp"
+        android:layout_marginLeft="16.7dp"
+        android:layout_marginRight="16.7dp"
+        android:background="@color/viewLine" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.7dp"
+        android:layout_marginTop="38.6dp"
+        android:layout_marginRight="16.7dp"
+        android:background="@drawable/rectangle_white"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:text="@string/login"
+        android:textColor="@color/red"
+        android:textSize="15sp" />
+</LinearLayout>

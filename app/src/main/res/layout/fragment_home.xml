@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+    <FrameLayout
+        android:id="@+id/flspinnerFlag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/spinneFlag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/country_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/txt_dubai"
+                android:textColor="@color/txt_black"
+                android:textSize="28.3sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="23.7dp"
+                android:src="@drawable/ic_circle_down" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="15.7dp"
+            android:text="@string/total_cases_of_coronavirus"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/rectangle_top_curepink"
+                android:orientation="vertical"
+                android:paddingBottom="36.3dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="36.3dp"
+                    android:layout_marginRight="30dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="17dp"
+                        android:paddingBottom="11.3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15.3dp"
+                            android:fontFamily="@font/sf_pro_display_bold"
+                            android:text="@string/_2370"
+                            android:textColor="@color/title_black"
+                            android:textSize="24.7sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:includeFontPadding="false"
+                            android:text="@string/total_cases"
+                            android:textColor="@color/title_color"
+                            android:textSize="12.3sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="12.3dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4.3dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="17dp"
+                            android:paddingBottom="11.3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15.3dp"
+                                android:fontFamily="@font/sf_pro_display_bold"
+                                android:text="@string/_1898"
+                                android:textColor="@color/title_black"
+                                android:textSize="24.7sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:includeFontPadding="false"
+                                android:text="@string/active_cases"
+                                android:textColor="@color/title_color"
+                                android:textSize="12.3sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4.3dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="17dp"
+                            android:paddingBottom="11.3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15.3dp"
+                                android:fontFamily="@font/sf_pro_display_bold"
+                                android:text="@string/_294"
+                                android:textColor="@color/title_black"
+                                android:textSize="24.7sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:includeFontPadding="false"
+                                android:text="@string/new_cases"
+                                android:textColor="@color/title_color"
+                                android:textSize="12.3sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="12.3dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4.3dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="17dp"
+                            android:paddingBottom="11.3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15.3dp"
+                                android:fontFamily="@font/sf_pro_display_bold"
+                                android:text="@string/_11"
+                                android:textColor="@color/title_black"
+                                android:textSize="24.7sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:includeFontPadding="false"
+                                android:text="@string/deaths"
+                                android:textColor="@color/title_color"
+                                android:textSize="12.3sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4.3dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="17dp"
+                            android:paddingBottom="11.3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15.3dp"
+                                android:fontFamily="@font/sf_pro_display_bold"
+                                android:text="@string/_67"
+                                android:textColor="@color/title_black"
+                                android:textSize="24.7sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:includeFontPadding="false"
+                                android:text="@string/recoveries"
+                                android:textColor="@color/title_color"
+                                android:textSize="12.3sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="17.3dp"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="@string/covid_19_updates"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="16.7dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/desk_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.7dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/sf_pro_display_medium"
+                        android:text="@string/due_to_covid_19"
+                        android:textColor="@color/txt_black"
+                        android:textSize="14sp" />
+
+                    <com.borjabravo.readmoretextview.ReadMoreTextView
+                        android:id="@+id/text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.7dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="8.7dp"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="@string/dubai_announces_19_cases"
+                        android:textColor="@color/hint_color"
+                        android:textSize="12.7sp"
+                        app:colorClickableText="#2089f2"
+                        app:trimCollapsedText="click to view less details"
+                        app:trimExpandedText="click to view full details"
+                        app:trimLength="150" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

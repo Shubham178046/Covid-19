@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".fragment.UpdateFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingBottom="22.5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="136dp"
+                android:layout_margin="16.7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/update_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginRight="16.7dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/description_1"
+                android:textColor="@color/txt_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16.7dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/description_2"
+                android:textColor="@color/txt_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginRight="16.7dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/description_3"
+                android:textColor="@color/txt_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="16.7dp"
+                android:layout_marginRight="16.7dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/description_1"
+                android:textColor="@color/txt_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16.7dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/description_2"
+                android:textColor="@color/txt_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginRight="16.7dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/description_3"
+                android:textColor="@color/txt_black"
+                android:textSize="14sp" />
+
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginRight="16.7dp"
+                android:visibility="gone"
+                android:background="@drawable/rectangle_red"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

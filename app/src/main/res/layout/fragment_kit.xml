@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".fragment.KitFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20.3dp"
+        android:layout_marginRight="18dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="3.3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12.3dp"
+            android:paddingBottom="12dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.3dp"
+                android:src="@drawable/ic_search_black_24dp"
+                app:tint="@color/red" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15.6dp"
+                android:background="@color/transparent"
+                android:hint="@string/search_by_product_name"
+                android:imeOptions="actionDone"
+                android:cursorVisible="false"
+                android:inputType="text"
+                android:textColor="@color/txt_black"
+                android:textColorHint="@color/hint_color"
+                android:textSize="13.7sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_Sanitizer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingLeft="29.3dp"
+        android:paddingTop="26dp"
+        android:paddingBottom="80dp" />
+</LinearLayout>

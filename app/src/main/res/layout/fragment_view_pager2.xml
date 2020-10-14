@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pink_light"
+    tools:context=".fragment.ViewPager2Fragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:fontFamily="@font/sf_pro_display_medium"
+        android:text="@string/how_to_protect"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:lineSpacingExtra="1dp"
+        android:layout_marginTop="36.4dp"
+        android:textColor="@color/txt_black"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:src="@drawable/walk2"
+        android:layout_marginTop="75.7dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_02"
+        android:layout_gravity="center"
+        android:textColor="@color/red"
+        android:textSize="45sp"
+        android:layout_marginTop="18.6dp"
+        android:fontFamily="@font/sf_pro_display_medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/use_face_mask"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:fontFamily="@font/sf_pro_display_medium"
+        android:textColor="@color/txt_black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/sf_pro_display_medium"
+        android:text="@string/cough_or_sneeze"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/txt_black"
+        android:textSize="15sp" />
+
+</LinearLayout>
